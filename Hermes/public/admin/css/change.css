@@ -1,0 +1,68 @@
+body {
+    background: url("../image/change.jpg") no-repeat center center;
+    background-size: 100% auto;
+}
+
+main {
+    position: relative;
+    height: 600px;
+    width: 500px !important;
+    background-color: rgba(238, 238, 238, .9);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.change-border {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.change-border li {
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+.change-border li:nth-child(odd) {
+    margin-top: 40px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.change-border li:nth-child(even) {
+    margin-top: 5px!important;
+}
+
+.change-border li:last-child {
+    text-align: center;
+    padding: 0;
+}
+
+input {
+    width: 200px;
+    background-color: #fff;
+}
+
+.change-border li:last-child input {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(50, 224, 196);
+}
+
+#fot {
+    position: fixed;
+    bottom: 0px;
+}
+
+
+/* .change-border {
+    margin: 40px auto;
+} */

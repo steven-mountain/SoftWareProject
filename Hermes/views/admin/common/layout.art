@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes</title>
+    <link rel="stylesheet" href="/common.css">
+    {{block 'link'}} {{/block}}
+    <!--<link rel="stylesheet" href="/home/css/change.css">
+    <script src="./js"></script> -->
+</head>
+
+<body>
+    {{block 'main'}} {{/block}}
+    <script src="/jQuery.js"></script>
+    <script src="/common.js"></script>
+    {{block 'script'}} {{/block}}
+</body>
+
+</html>

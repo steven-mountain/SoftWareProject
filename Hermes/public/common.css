@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /*IE6、7专有*/
+    *zoom: 1;
+}
+
+.heart {
+    margin: 0px auto;
+    width: 1200px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* header部分 */
+
+#nu {
+    margin-bottom: 40px;
+    height: 40px;
+    background-color: #95389e;
+}
+
+#nu li {
+    float: left;
+    line-height: 40px;
+}
+
+#fot li {
+    float: left;
+    line-height: 40px;
+}
+
+#nu li a {
+    display: inline-block;
+    width: 40px;
+    padding: 0px 5px;
+}
+
+#nu li a:hover {
+    color: orange;
+}
+
+
+/* bottom部分 */
+
+#fot {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #95389e;
+    height: 40px;
+}
+
+#buttom-border li {
+    float: left;
+    height: 40px;
+    padding: 0 5px;
+    line-height: 40px;
+    text-align: center;
+    color: #899bb4;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

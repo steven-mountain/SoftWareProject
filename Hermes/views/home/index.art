@@ -1,0 +1,152 @@
+{{extend './common/layout.art'}}
+{{block 'link'}}
+    <link rel="stylesheet" href="/home/css/index.css">
+{{/block}}  
+{{block 'main'}}
+    {{include './common/header.art'}}
+    <main class="heart clearfix">
+        <section class="user-border left">
+            <div class="user-info">
+                <ui class="info-top">
+                    <li>
+                        <span class="portrait"><img src="/home/image/user.png" alt="你的头像"></span>
+                    </li>
+                    <li>欢迎来到HERMES</li>
+                    <li>{{userInfo ? userInfo.username : '请登录'}}</li>
+                </ui>
+                <ul class="info-bottom">
+                    <li><a href="/home/change">编辑资料</a></li>
+                    <li><a href="">占位一号</a></li>
+                    <li><a href="">占位二号</a></li>
+                </ul>
+            </div>
+            <div class="rank">
+                <div id="rank-title"><span>RANK</span></div>
+                <ul>
+                    <li><span id="rank-one">1</span>一号占位</li>
+                    <li><span id="rank-two">2</span>二号占位</li>
+                    <li><span id="rank-three">3</span>三号占位</li>
+                    <li><span>4</span>四号占位</li>
+                    <li><span>5</span>五号占位</li>
+                </ul>
+            </div>
+        </section>
+        <section class="cont-border right">
+            <div id="cont-learn">
+                <div class="cont-title">
+                    <span class="cont-title-left left">学习</span>
+                    <span class="cont-title-right right">更多 >> </span>
+                </div>
+                <div class="cont-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <span>1</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>2</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>3</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="cont-life">
+                <div class="cont-title">
+                    <span class="cont-title-left left">生活</span>
+                    <span class="cont-title-right right">更多 >> </span>
+                </div>
+                <div class="cont-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <span>1</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>2</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>3</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="cont-news">
+                <div class="cont-title">
+                    <span class="cont-title-left left">新闻</span>
+                    <span class="cont-title-right right">更多 >> </span>
+                </div>
+                <div class="cont-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <span>1</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>2</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>3</span>
+                                <a href="">DESMOND THE BEST PS</a>
+                                <p>In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines
+                                    thoroughly:
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{include './common/footer.art'}}
+{{/block}}
+{{block 'script'}}
+    <script src="/home/js/index.js"></script>
+{{/block}}

@@ -1,0 +1,15 @@
+<footer class="toBottom" id="fot">
+    <div id="buttom-border" class="heart">
+        <ul class="left">
+            <li>论坛系统：</li>
+            <li>HERMES</li>
+        </ul>
+        <ul class="right">
+            <li>小组成员 </li>
+            <li>侯琳璇</li>
+            <li>解悦悦</li>
+            <li>刘新</li>
+            <li>蒋远发</li>
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,47 @@
+body {
+    /* background-color: pink; */
+    background: url("../image/manage.jpg") no-repeat;
+    background-size: 100% auto;
+}
+
+.toBottom {
+    position: fixed;
+    bottom: 0px;
+}
+
+.manage-border {
+    width: 100%;
+    /* border-radius: 10px; */
+    /* background-color: skyblue; */
+}
+
+.border-top {
+    text-align: center;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(150, 146, 175, .8);
+}
+
+.border-bottom {
+    background-color: rgba(215, 234, 234, .8);
+    border-radius: 10px;
+}
+
+.border-bottom li {
+    float: left;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #fff;
+}
+
+.border-bottom ul:nth-child(n+2) {
+    border-top: 1px solid #6c5b7c;
+}

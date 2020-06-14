@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../image/background.jpg") no-repeat;
+    background-size: 100% auto;
+}
+
+.w {
+    margin: 10px auto;
+    height: 600px;
+    color: #ffff;
+    box-sizing: border-box;
+}
+
+.brand {
+    float: left;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(135, 133, 162, .8);
+    color: #fff;
+}
+
+.log-reg {
+    float: left;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(72, 70, 109, .8);
+    color: #fff;
+}
+
+.logo .cont {
+    width: 400px;
+    height: 80px;
+    color: #fff;
+}
+
+.logo {
+    margin: 50px auto;
+    margin-top: 200px;
+    line-height: 80px;
+    font-size: 90px;
+    text-align: center;
+}
+
+.log-reg-border {
+    height: 40px;
+}
+
+.log-reg-border li {
+    float: left;
+    width: 200px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.log-reg-border li:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.cont {
+    margin: -20px auto;
+    line-height: 80px;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+/* form表单域 */
+
+input {
+    width: 300px;
+}
+
+.reg li:nth-child(odd) {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.reg li:nth-child(even) {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reg li:last-child {
+    padding-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* log */
+
+.log li:nth-child(odd) {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.log li:nth-child(even) {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.log li:last-child {
+    padding-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.log-reg-submit {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(186, 215, 223);
+    color: #fff;
+}
+
+.toBottom {
+    position: fixed;
+    bottom: 0px;
+}

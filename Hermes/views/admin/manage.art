@@ -1,0 +1,30 @@
+{{extend './common/layout.art'}} {{block 'link'}}
+<link rel="stylesheet" href="/admin/css/manage.css"> {{/block}} {{block 'main'}} {{include './common/header.art'}}
+<main class="w heart">
+    <div class="manage-border">
+        <div class="border-top">
+            用户信息管理
+        </div>
+        <div class="border-bottom clearfix">
+            <ul class="clearfix">
+                <li>邮箱</li>
+                <li>账号</li>
+                <li>昵称</li>
+                <li>密码</li>
+                <li> <a href="#">修改</a> </li>
+                <li>删除</li>
+            </ul>
+            {{each users}}
+            <ul class="clearfix">
+                <li>{{@$value.email}}</li>
+                <li>{{$value.account}}</li>
+                <li>{{$value.username}}</li>
+                <li>{{$value.password}}</li>
+                <li> <a href="/admin/change?account={{$value.account}}">修改</a> </li>
+                <li><a href="/admin/delete?account={{$value.account}}">删除</a></li>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+</main>
+{{include './common/footer.art'}} {{/block}}

@@ -1,0 +1,88 @@
+{{extend './common/layout.art'}} {{block 'link'}}
+<link rel="stylesheet" href="/home/css/login.css"> {{/block}} {{block 'main'}} {{include './common/header.art'}}
+<main class="w heart">
+    <div class="brand">
+        <div class="logo">HERMES</div>
+        <div class="cont">软件工程小组项目</div>
+    </div>
+    <div class="log-reg">
+        <ul class="log-reg-border">
+            <li class="log-button">登陆</li>
+            <li class="reg-button">注册</li>
+        </ul>
+        <div class="reg hidden">
+            <form action="/home/login" method="post" id="reg-form">
+                <ul>
+                    <li>邮箱：</li>
+                    <li>
+                        <input name="email" type="text" required="required">
+                    </li>
+                    <li>账号：</li>
+                    <li>
+                        <input name="account" type="text">
+                    </li>
+                    <li>昵称：</li>
+                    <li>
+                        <input name="username" type="text">
+                    </li>
+                    <li>密码：</li>
+                    <li><input name="password" type="password"></li>
+                    <li><input type="submit" value="注册" class="log-reg-submit"></li>
+                </ul>
+            </form>
+        </div>
+        <dib class="log show">
+            <form action="/home/login" method="post" id="log-form">
+                <ul>
+                    <li>账号：</li>
+                    <li>
+                        <input name="account" type="text">
+                    </li>
+                    <li>密码：</li>
+                    <li><input name="password" type="password"></li>
+                    <li><input type="submit" value="登录" class="log-reg-submit"></li>
+                </ul>
+            </form>
+        </dib>
+</main>
+{{include './common/footer.art'}} {{/block}} {{block 'script'}}
+<script type="text/javascript">
+    // 为表单添加提交事件
+    $('#log-form').on('submit', function() {
+        // 获取表单中用户输入的内容
+        let result = serializeToJson($(this));
+        // 对用户输入的内容进行判断
+        if (result.account.trim().length == 0) {
+            alert('请输入账号');
+            return false;
+        }
+        if (result.password.trim().length == 0) {
+            alert('请输入密码');
+            return false;
+        }
+    });
+
+    $('#reg-form').on('submit', function() {
+        // 获取表单中用户输入的内容
+        let result = serializeToJson($(this));
+        // 对用户输入的内容进行判断
+        if (result.email.trim().length == 0) {
+            alert('请输入账号');
+            return false;
+        }
+        if (result.account.trim().length == 0) {
+            alert('请输入账号');
+            return false;
+        }
+        if (result.username.trim().length == 0) {
+            alert('请输入账号');
+            return false;
+        }
+        if (result.password.trim().length == 0) {
+            alert('请输入密码');
+            return false;
+        }
+    });
+</script>
+<script src="/home/js/login.js"></script>
+{{/block}}

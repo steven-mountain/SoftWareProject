@@ -1,0 +1,35 @@
+{{extend './common/layout.art'}} {{block 'link'}}
+<style>
+    body {
+        background-color: #654062;
+    }
+    
+    #fot {
+        position: fixed;
+        bottom: 0px;
+    }
+    
+    #message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -300px;
+        margin-left: -400px;
+        width: 800px;
+        height: 600px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 600px;
+        font-size: 40px;
+        color: #fff;
+    }
+</style>
+{{/block}} {{block 'main'}} {{include './common/header.art'}}
+<div id='message'>{{msg}}</div>
+{{include './common/footer.art'}} {{/block}} {{block 'script'}}
+<script type="text/javascript">
+    setTimeout(() => {
+        location.href = '/admin/mlogin';
+    }, 3000);
+</script>
+{{/block}}

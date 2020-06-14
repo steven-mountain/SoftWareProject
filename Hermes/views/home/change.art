@@ -1,0 +1,26 @@
+{{extend './common/layout.art'}}
+{{block 'link'}}
+    <link rel="stylesheet" href="/home/css/change.css">
+{{/block}}
+{{block 'main'}}
+    {{include './common/header.art'}}
+    <main class="heart clearfix">
+        <div class="change-border">
+             <form action="/home/user-modify?account={{user.account}}" method="post">
+                <ul>
+                    <li>邮箱：</li>
+                    <li>
+                        <input name = "email" type="text" required="required" value="{{user.email}}">
+                    </li>
+                    <li>昵称：</li>
+                    <li>
+                        <input name = "username" type="text" value="{{user.username}}">
+                    </li>
+                    <li>密码：</li>
+                    <li><input name = "password" type="password" value="{{user.password}}"></li>
+                    <li><input type="submit" value="更改" class="log-reg-submit"></li>
+                </ul>
+            </form>
+    </main>
+    {{include './common/footer.art'}}
+{{/block}}
